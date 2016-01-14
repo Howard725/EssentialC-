@@ -3,3 +3,6 @@
 //
 
 #include "Stack.h"
+
+ostream& operator<<(ostream& os, const Stack &stack)
+{ stack.print(os); return os; }

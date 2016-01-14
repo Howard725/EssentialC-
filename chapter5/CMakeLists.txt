@@ -3,5 +3,5 @@ project(chapter5)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp Stack.cpp Stack.h LIFO_Stack.cpp LIFO_Stack.h)
+set(SOURCE_FILES main.cpp Stack.cpp Stack.h LIFO_Stack.cpp LIFO_Stack.h Peekback_Stack.cpp Peekback_Stack.h)
 add_executable(chapter5 ${SOURCE_FILES})

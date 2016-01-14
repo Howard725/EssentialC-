@@ -6,6 +6,7 @@
 #define CHAPTER5_STACK_H
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -19,9 +20,11 @@ public:
     virtual int size() const = 0;
     virtual bool empty() const = 0;
     virtual bool full() const = 0;
-    virtual elemType& peek() const = 0;//查看栈顶元素而不移除
-    virtual void print() const = 0;
+    virtual void print( ostream& = cout ) const = 0;
+    virtual bool peek( int index, elemType& elem ) = 0;
+    virtual int top() const = 0;
 };
 
+    ostream& operator<<(ostream& os, const Stack &Stack);
 
 #endif //CHAPTER5_STACK_H
