@@ -21,7 +21,7 @@ bool Peekback_Stack::pop(elemType &elem) {
 }
 
 bool Peekback_Stack::peek(int index, elemType &elem) {
-    if ( empty() && index > size() - 1 )
+    if ( empty() || index > size() - 1 || index < 0)
         return false;
     elem = _stack[index];
     return true;

@@ -62,6 +62,7 @@ void ex5_1_2()
     else
         cout << "peek failed." << endl;
 
+    return;
 }
 
 int main() {
